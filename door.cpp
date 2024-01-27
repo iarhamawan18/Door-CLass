@@ -7,7 +7,6 @@ class Door
 	bool isLocked;
 	public:
 	Door(); // Initializes the door as closed and unlocked
-	void openDoor()
 	void openDoor() 
     	{
         if (!isLocked) 
@@ -25,7 +24,7 @@ class Door
 	void lockDoor();
 	void unlock();
 	bool isDoorOpen() const;
-	bool isDoor Locked() const;
+	bool isDoorLocked() const;
 };
 
 int main()
