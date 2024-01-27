@@ -12,7 +12,10 @@ class Door
 	void lockDoor();
 	void unlock();
 	bool isDoorOpen() const;
-	bool isDoor Locked() const;
+	bool isDoor Locked() const
+	 {
+        return isLocked;
+    }
 };
 
 int main()
