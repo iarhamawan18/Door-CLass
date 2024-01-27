@@ -10,7 +10,7 @@ class Door
 	void openDoor();
 	void closeDoor();
 	void lockDoor(){
-		
+
 		 if (!isopen) 
         {
             isLocked = true;
@@ -21,7 +21,11 @@ class Door
             cout << "Cannot lock the door. It is still open." << endl;
         }
 	}
-	void unlock();
+	void unlock(){
+		
+        isLocked = false;
+        cout << "Door is now unlocked." << endl;
+	}
 	bool isDoorOpen() const;
 	bool isDoorLocked() const;
 };
