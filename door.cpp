@@ -11,12 +11,33 @@ class Door
 	void closeDoor();
 	void lockDoor();
 	void unlock();
-	
-	bool isDoorOpen() const
+		bool isDoorOpen() const
 	  {
         return isopen;
     }
-	bool isDoor Locked() const;
+	bool isDoorLocked() const;  
+	void lockDoor(){
+		 if (!isopen) 
+        {
+            isLocked = true;
+            cout << "Door is now locked." << endl;
+        } 
+        else 
+        {
+            cout << "Cannot lock the door. It is still open." << endl;
+        }
+	}
+	void unlock(){
+		
+        isLocked = false;
+        cout << "Door is now unlocked." << endl;
+	}
+	bool isDoorOpen() const;
+
+	bool isDoorLocked() const
+	 {
+        return isLocked;
+    }
 };
 
 int main()
