@@ -11,13 +11,9 @@ class Door
 	void closeDoor();
 	void lockDoor();
 	void unlock();
-		bool isDoorOpen() const
-	  {
-        return isopen;
-    }
-	bool isDoorLocked() const;  
-	void lockDoor(){
-		 if (!isopen) 
+	void lockDoor()
+	{
+	if (!isopen) 
         {
             isLocked = true;
             cout << "Door is now locked." << endl;
@@ -33,11 +29,13 @@ class Door
         cout << "Door is now unlocked." << endl;
 	}
 	bool isDoorOpen() const;
-
+	}
+	return isOpen;
+	}
 	bool isDoorLocked() const
-	 {
+	{
         return isLocked;
-    }
+    	}
 };
 
 int main()
